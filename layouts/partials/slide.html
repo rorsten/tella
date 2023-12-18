@@ -5,6 +5,7 @@
             <img src="{{ .image }}" alt="">
             <div class="s-fade-txt">
                 <h1 class="text-4xl {{ or .color "text-white" }}">{{ .title }}</h1>
+                {{ if .subtitle }}<h2 class="text-2xl {{ or .color "text-white" }}">{{ .subtitle }}</h2>{{ end -}}
             </div>
         </div>
         {{ end }}
